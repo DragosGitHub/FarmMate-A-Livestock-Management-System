@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 100px; /* Offset for the fixed header */
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #374785;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .welcome {
+    line-height: 1.2;
+}
+
+header .sign-in-btn {
+    background-color: #1dd1a1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header .sign-in-btn:hover {
+    background-color: #159e73;
+}
+
+/* Fixed Header Styles */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+
+.fixed-header .app-name {
+    font-size: 24px;
+    color: #374785;
+    margin: 0;
+}
+
+.fixed-header .developer-name {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h3 {
+    margin: 0 0 10px;
+    color: #374785;
+    font-size: 24px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Summary Section */
+.summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.summary-card {
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.summary-card .card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Grid Section */
+.section-title {
+    padding: 0 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-item {
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.grid-item .grid-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* Add Button */
+footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.add-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #1dd1a1;
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+}

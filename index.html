@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmMate: A Livestock Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <div class="fixed-header">
+        <h1 class="app-name">FarmMate: A Livestock Management System</h1>
+        <p class="developer-name">Developed by Saptadip Das</p>
+    </div>
+
+    <!-- Top Bar -->
+    <header>
+        <div class="top-bar">
+            <div class="welcome">
+                <h2 id="welcome-message">Please sign in to continue</h2>
+            </div>
+            <button class="sign-in-btn" id="sign-in-btn">Sign In</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about">
+            <h3>About FarmMate</h3>
+            <p>
+                FarmMate is designed to help farmers and livestock owners effectively manage their animals. 
+                With this app, you can keep track of your herd's health, location, and activities in real time. 
+                FarmMate aims to make livestock management efficient, improving productivity and ensuring animal welfare.
+            </p>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="summary">
+            <div class="summary-card" id="total-animals">
+                <img src="icons/herd.png" alt="Total Animals" class="card-icon">
+                <span id="total-animals-count">0</span><br>Total Animals
+            </div>
+            <div class="summary-card" id="cows">
+                <img src="icons/cow.png" alt="Cows" class="card-icon">
+                <span id="cows-count">0</span><br>Cows
+            </div>
+            <div class="summary-card" id="sheep">
+                <img src="icons/sheep.png" alt="Sheep" class="card-icon">
+                <span id="sheep-count">0</span><br>Sheep
+            </div>
+            <div class="summary-card" id="buffalo">
+                <img src="icons/buffalo.png" alt="Buffalo" class="card-icon">
+                <span id="buffalo-count">0</span><br>Buffalo
+            </div>
+        </section>
+
+        <h3 class="section-title">Health Summary</h3>
+        <section class="grid-container" id="health-summary">
+            <div class="grid-item" id="pregnant">
+                <img src="icons/pregnant.png" alt="Pregnant" class="grid-icon">
+                <span>Pregnant<br><span id="pregnant-count">0</span></span>
+            </div>
+            <div class="grid-item" id="non-pregnant">
+                <img src="icons/non-pregnant.png" alt="Non-Pregnant" class="grid-icon">
+                <span>Non-Pregnant<br><span id="non-pregnant-count">0</span></span>
+            </div>
+            <div class="grid-item" id="sick">
+                <img src="icons/sick.png" alt="Sick" class="grid-icon">
+                <span>Sick<br><span id="sick-count">0</span></span>
+            </div>
+            <div class="grid-item" id="needs-care">
+                <img src="icons/care.png" alt="Needs Care" class="grid-icon">
+                <span>Needs Care<br><span id="needs-care-count">0</span></span>
+            </div>
+            <div class="grid-item" id="abnormal-symptoms">
+                <img src="icons/symptoms.png" alt="Abnormal Symptoms" class="grid-icon">
+                <span>Abnormal Symptoms<br><span id="abnormal-symptoms-count">0</span></span>
+            </div>
+        </section>
+
+        <!-- Data Entries Section -->
+        <h3 class="section-title">Data Entries</h3>
+        <section class="data-entries" id="data-entries">
+            <p>No data entries yet. Use the Add Data button to start adding information.</p>
+        </section>
+    </main>
+
+    <!-- Floating Add Button -->
+    <footer>
+        <div class="add-btn" id="add-data-btn">Add Data</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
